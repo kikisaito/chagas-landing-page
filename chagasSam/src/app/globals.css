@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(to bottom, #000000, #111827, #000000);
+  color: #F3F4F6;
+  font-family: var(--font-sans), sans-serif;
+}
+
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(232, 93, 4, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 93, 4, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
