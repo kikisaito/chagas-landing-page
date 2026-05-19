@@ -40,7 +40,7 @@ export default function Vector() {
               </div>
               <h3 className="text-xl font-bold text-white">Hábitat</h3>
             </div>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed text-left md:text-justify">
               Los triatominos habitan en grietas de paredes de adobe o
               bajareque, techos de palma, corrales, gallineros y
               acumulaciones de leña y escombros. Prefieren temperaturas
@@ -76,7 +76,7 @@ export default function Vector() {
                     <h4 className="font-bold text-white italic">
                       {especie.nombre}
                     </h4>
-                    <p className="text-gray-300 text-sm leading-relaxed mt-1">
+                    <p className="text-gray-300 text-sm leading-relaxed mt-1 text-left md:text-justify">
                       {especie.descripcion}
                     </p>
                   </div>

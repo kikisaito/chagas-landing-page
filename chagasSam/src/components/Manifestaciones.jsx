@@ -140,7 +140,7 @@ export default function Manifestaciones() {
                           <h4 className="font-bold text-white mb-1">
                             {sintoma.titulo}
                           </h4>
-                          <p className="text-gray-300 text-sm leading-relaxed">
+                          <p className="text-gray-300 text-sm leading-relaxed text-left md:text-justify">
                             {sintoma.descripcion}
                           </p>
                           <button
@@ -179,10 +179,10 @@ export default function Manifestaciones() {
               </div>
             )}
 
-            <p className="text-gray-300 italic border-l-4 border-[#E85D04] pl-4 mb-6">
+            <p className="text-gray-300 italic border-l-4 border-[#E85D04] pl-4 mb-6 text-left md:text-justify">
               {modal.sintoma.descripcion}
             </p>
-            <p className="text-gray-300">{modal.sintoma.detalle}</p>
+            <p className="text-gray-300 text-left md:text-justify">{modal.sintoma.detalle}</p>
           </>
         )}
       </Modal>

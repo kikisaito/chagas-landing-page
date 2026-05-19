@@ -12,7 +12,7 @@ export default function Epidemiologia() {
             Riesgo Nacional
           </h3>
         </div>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed text-left md:text-justify">
           El <strong className="text-white">88%</strong> del territorio nacional (equivalente a
           aproximadamente 1,727,000 km²) reúne las condiciones
           eco-epidemiológicas para la transmisión vectorial de T. cruzi.
@@ -35,7 +35,7 @@ export default function Epidemiologia() {
             Alerta en Chiapas
           </h3>
         </div>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed text-left md:text-justify">
           El estado de Chiapas presenta focos de transmisión activa con
           hasta un <strong className="text-white">13%</strong> de positividad serológica en
           comunidades rurales como <strong className="text-white">Las Maravillas</strong> y{" "}
@@ -58,7 +58,7 @@ export default function Epidemiologia() {
             Percepción Social
           </h3>
         </div>
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed text-left md:text-justify">
           Estudios de conocimiento, actitudes y prácticas (CAP) realizados
           en comunidades endémicas de Chiapas revelan que solo entre el{" "}
           <strong className="text-white">30% y 31%</strong> de la población reconoce al vector

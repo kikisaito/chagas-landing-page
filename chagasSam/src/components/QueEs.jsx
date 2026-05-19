@@ -45,7 +45,7 @@ export default function QueEs() {
                     {card.titulo}
                   </h3>
                 </div>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-300 leading-relaxed text-left md:text-justify">
                   {card.descripcion}
                 </p>
               </article>

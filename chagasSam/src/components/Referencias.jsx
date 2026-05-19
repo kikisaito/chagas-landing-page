@@ -3,6 +3,14 @@ import { BookOpen } from "lucide-react";
 const referencias = [
   {
     texto:
+      "Carabarin-Lima, A., González-Vázquez, M. C., Rodríguez-Morales, O., & Baylón-Pacheco, L. (2017). Chagas disease in Mexico: a serological survey in Oaxaca and Chiapas. PLoS Neglected Tropical Diseases, 11(12), e0006158. https://doi.org/10.1371/journal.pntd.0006158",
+  },
+  {
+    texto:
+      "Norma Oficial Mexicana NOM-253-SSA1-2012, Para la disposición de sangre humana y sus componentes con fines terapéuticos. Diario Oficial de la Federación, 26 de octubre de 2012.",
+  },
+  {
+    texto:
       "Organización Mundial de la Salud. (2024). Enfermedad de Chagas (tripanosomiasis americana). Nota descriptiva. Ginebra: OMS. https://www.who.int/es/news-room/fact-sheets/detail/chagas-disease",
   },
   {
@@ -11,11 +19,7 @@ const referencias = [
   },
   {
     texto:
-      "Secretaría de Salud, México. (2022). Programa de Acción Específico: Enfermedad de Chagas 2022-2026. Ciudad de México: Gobierno de México.",
-  },
-  {
-    texto:
-      "Carabarin-Lima, A., González-Vázquez, M. C., Rodríguez-Morales, O., & Baylón-Pacheco, L. (2017). Chagas disease in Mexico: a serological survey in Oaxaca and Chiapas. PLoS Neglected Tropical Diseases, 11(12), e0006158. https://doi.org/10.1371/journal.pntd.0006158",
+      "Rassi, A., Jr., Rassi, A., & Marin-Neto, J. A. (2010). Chagas disease. The Lancet, 375(9723), 1388–1402. https://doi.org/10.1016/S0140-6736(10)60061-X",
   },
   {
     texto:
@@ -23,11 +27,7 @@ const referencias = [
   },
   {
     texto:
-      "Norma Oficial Mexicana NOM-253-SSA1-2012, Para la disposición de sangre humana y sus componentes con fines terapéuticos. Diario Oficial de la Federación, 26 de octubre de 2012.",
-  },
-  {
-    texto:
-      "Rassi, A., Jr., Rassi, A., & Marin-Neto, J. A. (2010). Chagas disease. The Lancet, 375(9723), 1388–1402. https://doi.org/10.1016/S0140-6736(10)60061-X",
+      "Secretaría de Salud, México. (2022). Programa de Acción Específico: Enfermedad de Chagas 2022-2026. Ciudad de México: Gobierno de México.",
   },
 ];
 

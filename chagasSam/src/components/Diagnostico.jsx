@@ -137,7 +137,7 @@ export default function Diagnostico() {
                           <h4 className="font-bold text-white mb-1">
                             {metodo.titulo}
                           </h4>
-                          <p className="text-gray-300 text-sm leading-relaxed">
+                           <p className="text-gray-300 text-sm leading-relaxed text-left md:text-justify">
                             {metodo.descripcion}
                           </p>
                           <button
@@ -164,10 +164,10 @@ export default function Diagnostico() {
       >
         {modal.metodo && (
           <>
-            <p className="text-gray-300 italic border-l-4 border-[#E85D04] pl-4 mb-6">
+            <p className="text-gray-300 italic border-l-4 border-[#E85D04] pl-4 mb-6 text-left md:text-justify">
               {modal.metodo.descripcion}
             </p>
-            <p className="text-gray-300">{modal.metodo.detalle}</p>
+            <p className="text-gray-300 text-left md:text-justify">{modal.metodo.detalle}</p>
           </>
         )}
       </Modal>

@@ -51,7 +51,7 @@ export default function Transmision() {
                 {item.titulo}
               </h3>
             </div>
-            <p className="text-gray-300 leading-relaxed text-sm">
+            <p className="text-gray-300 leading-relaxed text-sm text-left md:text-justify">
               {item.descripcion}
             </p>
           </article>
