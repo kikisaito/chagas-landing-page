@@ -18,7 +18,6 @@ export default function Footer() {
         <p className="text-sm mt-4 text-gray-400"> Mendoza Salazar Larissa </p>
         <p className="text-sm mt-1 text-gray-400"> Ozuna Toledo Valentina </p>
         <p className="text-sm mt-1 text-gray-400"> Salazar Ángel Monserrat </p>
-        <p className="text-sm mt-1 text-gray-400"> Mendoza Salazar Larissa </p>
         <p className="text-sm mt-1 text-gray-400"> Velázquez Magdaleno Luna Valeria </p>
         <p className="text-sm mt-4 text-gray-500">&copy; {year}</p>
       </div>
