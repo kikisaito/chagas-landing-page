@@ -59,6 +59,48 @@ export default function Referencias() {
             </div>
           ))}
         </div>
+
+        {/* Procedencia de Recursos Visuales y Audiovisuales */}
+        <div className="border-t border-white/10 pt-6 mt-8">
+          <h3 className="text-xl md:text-2xl font-bold text-[#E85D04] mb-4">
+            Procedencia de Recursos Visuales y Audiovisuales
+          </h3>
+          <ul className="space-y-3 text-sm text-gray-400">
+            <li className="text-left md:text-justify">
+              <span className="font-semibold text-white">Imagen 1</span>{" "}
+              (Fondo de sección Hero): Micrografía electrónica de{" "}
+              <em>Trypanosoma cruzi</em>. Fuente: Biblioteca de Imágenes de
+              Salud Pública de los CDC (Public Health Image Library).
+            </li>
+            <li className="text-left md:text-justify">
+              <span className="font-semibold text-white">Imagen 2</span>{" "}
+              (Sección Vector): Fotografía biológica de{" "}
+              <em>Triatoma dimidiata</em>. Fuente: Repositorio de Wikimedia
+              Commons.
+            </li>
+            <li className="text-left md:text-justify">
+              <span className="font-semibold text-white">Imagen 3</span>{" "}
+              (Sección Ciclo de Vida): Diagrama del ciclo biológico
+              parasitario. Fuente: Materiales didácticos de la Organización
+              Mundial de la Salud (OMS / OPS).
+            </li>
+            <li className="text-left md:text-justify">
+              <span className="font-semibold text-white">Imagen 4</span> (Modal
+              de Manifestaciones Clínicas): Registro fotográfico clínico del
+              edema bipalpebral unilateral (Signo de Romaña). Fuente: Centros
+              para el Control y la Prevención de Enfermedades (CDC).
+            </li>
+            <li className="text-left md:text-justify">
+              <span className="font-semibold text-white">
+                Recurso Audiovisual
+              </span>{" "}
+              (Sección Prevención): Video institucional &quot;Día Mundial de
+              la Enfermedad de Chagas 2025 - Mensaje del Dr. Tedros Adhanom
+              Ghebreyesus&quot;. Fuente: Canal oficial de la Organización
+              Mundial de la Salud (OMS) en YouTube.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

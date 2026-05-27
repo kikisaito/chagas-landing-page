@@ -19,6 +19,9 @@ export default function Footer() {
         <p className="text-sm mt-1 text-gray-400"> Ozuna Toledo Valentina </p>
         <p className="text-sm mt-1 text-gray-400"> Salazar Ángel Monserrat </p>
         <p className="text-sm mt-1 text-gray-400"> Velázquez Magdaleno Luna Valeria </p>
+        <p className="text-xs md:text-sm mt-4 text-gray-400 font-mono">
+          Contacto: 06-05519@upgch.edu.mx / 06-05457@upgch.edu.mx
+        </p>
         <p className="text-sm mt-4 text-gray-500">&copy; {year}</p>
       </div>
     </footer>
