@@ -1,25 +1,33 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
-import { Home, Bug } from "lucide-react";
+import { Home, Bug, X } from "lucide-react";
 
 const especies = [
   {
     nombre: "Triatoma dimidiata",
+    imagen: "/images/vector-dimidiata.jpg",
     descripcion:
       "Principal vector en México y Centroamérica. Presente en 18 estados de la República Mexicana. Longitud 25-32 mm, coloración marrón oscura con manchas anaranjadas características en el conexivo. Hábitat peridoméstico (gallineros, corrales, pilas de leña) con marcada tendencia a invadir viviendas humanas. Alta capacidad de dispersión (vuelo activo). Índice de infección natural por T. cruzi del 20-60% en zonas endémicas.",
   },
   {
-    nombre: "Rhodnius prolixus",
+    nombre: "Triatoma pallidipennis",
+    imagen: "/images/vector-pallidipennis.jpg",
     descripcion:
-      "Vector principal en el norte de Sudamérica (Colombia, Venezuela, Guyana). Longitud 20-27 mm, coloración marrón clara con bandas transversales más oscuras en el abdomen. Estrechamente asociado a palmeras (Attalea butyracea, Elaeis guineensis) donde las aves y roedores actúan como reservorios. Alta eficiencia vectorial debido a su corto tiempo de defecación post-alimentación (1-2 minutos). Ha sido objeto de programas de eliminación en Centroamérica con resultados favorables.",
+      "Vector relevante en México, particularmente en la región del Pacífico y zonas del centro del país. Longitud 22-28 mm, coloración marrón claro con bandas pálidas características en el conexivo. Hábitat peridoméstico y doméstico, frecuentemente encontrado en corrales, gallineros y grietas de paredes de adobe. Presenta un índice de infección natural por T. cruzi significativo en zonas endémicas.",
   },
   {
-    nombre: "Panstrongylus rufotuberculatus",
+    nombre: "Triatoma barberi",
+    imagen: "/images/vector-barberi.jpg",
     descripcion:
-      "Especie silvestre con distribución desde México hasta Argentina. Longitud 30-38 mm (uno de los triatominos más grandes). Coloración negruzca con manchas rojas en el conexivo. Hábitat principalmente silvestre (huecos de árboles, cuevas, nidos de mamíferos), pero con incursiones peridomésticas en zonas de deforestación. Se alimenta de una amplia gama de hospederos incluyendo armadillos, zarigüeyas y roedores. Su importancia epidemiológica ha aumentado por la invasión de hábitats modificados por el humano.",
+      "Especie endémica de México, considerada una de las más importantes en la transmisión intradomiciliaria. Longitud 20-26 mm, coloración marrón oscura a negruzca. Altamente adaptada al hábitat doméstico, coloniza activamente las viviendas humanas, especialmente en zonas rurales del centro y sur del país. Su estrecha asociación con el ser humano la convierte en un vector de alto riesgo epidemiológico.",
   },
 ];
 
 export default function Vector() {
+  const [imagenExpandida, setImagenExpandida] = useState(null);
+
   return (
     <>
       <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden mb-8">
@@ -69,9 +77,19 @@ export default function Vector() {
               {especies.map((especie) => (
                 <div
                   key={especie.nombre}
-                  className="flex items-start gap-3 p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
+                  className="p-4 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
                 >
-                  <span className="mt-2 w-2 h-2 bg-[#E85D04] rounded-full shrink-0" />
+                  <div
+                    className="relative w-full h-40 rounded-lg overflow-hidden mb-3 cursor-pointer hover:opacity-90 transition-opacity"
+                    onClick={() => setImagenExpandida(especie.imagen)}
+                  >
+                    <Image
+                      src={especie.imagen}
+                      alt={especie.nombre}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                   <div>
                     <h4 className="font-bold text-white italic">
                       {especie.nombre}
@@ -86,6 +104,31 @@ export default function Vector() {
           </article>
         </div>
       </div>
+
+      {imagenExpandida && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          onClick={() => setImagenExpandida(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setImagenExpandida(null)}
+          >
+            <X size={32} />
+          </button>
+          <div
+            className="relative w-full max-w-5xl h-[80vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Image
+              src={imagenExpandida}
+              alt="Imagen expandida de especie vector"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

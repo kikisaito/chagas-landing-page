@@ -29,9 +29,6 @@ export default function Header() {
             Mendoza Salazar Larissa / Ozuna Toledo Valentina / Salazar Ángel
             Monserrat / Velázquez Magdaleno Luna Valeria
           </p>
-          <h2 className="text-xl md:text-2xl font-bold text-white mt-2">
-            Chagas Bajo la Lupa
-          </h2>
           <p className="text-xs md:text-sm text-gray-400 font-mono">
             Contacto: 06-05519@upgch.edu.mx / 06-05457@upgch.edu.mx
           </p>
