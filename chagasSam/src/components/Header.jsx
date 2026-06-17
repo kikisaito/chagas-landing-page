@@ -17,7 +17,6 @@ export default function Header() {
         {/* Columna central de texto */}
         <div className="flex flex-col items-center text-center mx-4 gap-2">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white">
-            Chagas Bajo la Lupa
           </h1>
           <p className="text-lg md:text-xl font-bold text-gray-200">
             Universidad Pablo Guardado Chávez
@@ -26,7 +25,7 @@ export default function Header() {
             Químico Farmacobiólogo | Grupo: 2A2
           </p>
           <p className="text-sm text-gray-400 max-w-xl">
-            Mendoza Salazar Larissa / Ozuna Toledo Valentina / Salazar Ángel
+            Mendoza Salazar Larissa / Salazar Ángel
             Monserrat / Velázquez Magdaleno Luna Valeria
           </p>
           <p className="text-xs md:text-sm text-gray-400 font-mono">
