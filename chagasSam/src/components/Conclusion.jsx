@@ -2,7 +2,7 @@ import { Bookmark } from "lucide-react";
 
 export default function Conclusion() {
   return (
-    <section id="conclusion" className="py-10 md:py-14 px-6 bg-transparent">
+    <section id="conclusiones" className="py-10 md:py-14 px-6 bg-transparent">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-3 justify-center mb-8">
           <div className="p-2 rounded-lg bg-[#E85D04]/10">

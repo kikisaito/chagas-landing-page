@@ -8,6 +8,8 @@ const links = [
   { label: "El Parásito", href: "#que-es" },
   { label: "Clínica y Diagnóstico", href: "#clinica" },
   { label: "Prevención y Datos", href: "#epi-prevencion" },
+  { label: "Actividades", href: "#actividades" },
+  { label: "Conclusiones", href: "#conclusiones" },
   { label: "Referencias", href: "#referencias" },
 ];
 

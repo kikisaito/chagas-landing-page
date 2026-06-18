@@ -233,7 +233,7 @@ export default function Quiz() {
   };
 
   return (
-    <section id="quiz" className="py-10 md:py-14 px-6 bg-transparent">
+    <section id="actividades" className="py-10 md:py-14 px-6 bg-transparent">
       <div className="max-w-4xl mx-auto">
         {gameMode === "menu" && (
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-8">
